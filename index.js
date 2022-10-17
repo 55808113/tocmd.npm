@@ -4,6 +4,7 @@ require('shelljs/global')
 
 var assign = require('object-assign')
 var fs = require('fs')
+var path = require('path')
 var BufferHelper = require('bufferhelper')
 var Handlebars = require('handlebars')
 var open = require("open")
@@ -27,7 +28,8 @@ function generator(pwd, source_file_name, dest_file_path, is_open, options) {
 	//:属性返回的是  nodejs 的安装路径 
 	// processor.execPath 
 
-	var preview_path = pwd + '/preview'
+	//var preview_path = pwd + '/preview'
+	var preview_path = path.dirname(dest_file_path)
 
 	var source_file_path = source_file_name
 
