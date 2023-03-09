@@ -11,10 +11,9 @@ var jquery_ztree_toc_opts = {
         left: '0px',
         top: '0px',
 				// 'overflow-x': 'hidden',
-				'height': $(window).height() + 'px'
+				'height': $(window).height()-5 + 'px'
     }
 }
 var markdown_panel_style = {
-    'width':'70%',
-    'margin-left':'25%'
+    'margin-left':'326px'
 };
