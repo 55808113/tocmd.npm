@@ -93,8 +93,8 @@ function factor(opts ,count,current) {
 		}
 		
 		if(opts.is_auto_number == true) {
-			//另存为的文件里会有编号，所以有编号的就不再重新替换
-			if($(header_obj).text().indexOf( opts._headers.join('.') ) != -1){
+			//另存为的文件里会有编号，所以有编号的就不再重新替换.
+			if($(header_obj).text().indexOf( opts._headers.join('.') ) == 0){
 				
 			}else{
 				$(header_obj).text(opts._headers.join('.') + '. ' + $(header_obj).text());
